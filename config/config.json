@@ -1,0 +1,36 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "pollen-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/pollen/PollenWebPart.js",
+          "manifest": "./src/webparts/pollen/PollenWebPart.manifest.json"
+        }
+      ]
+    },
+    "pollen-view-results-field-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/pollenViewResults/PollenViewResultsFieldCustomizer.js",
+          "manifest": "./src/extensions/pollenViewResults/PollenViewResultsFieldCustomizer.manifest.json"
+        }
+      ]
+    },
+    "create-poll-command-set": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/createPoll/CreatePollCommandSet.js",
+          "manifest": "./src/extensions/createPoll/CreatePollCommandSet.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "PollenWebPartStrings": "lib/webparts/pollen/loc/{locale}.js",
+    "PollenViewResultsFieldCustomizerStrings": "lib/extensions/pollenViewResults/loc/{locale}.js",
+    "CreatePollCommandSetStrings": "lib/extensions/createPoll/loc/{locale}.js"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "initialPage": "https://localhost:5432/workbench",
+  "api": {
+    "port": 5432,
+    "entryPath": "node_modules/@microsoft/sp-webpart-workbench/lib/api/"
+  },
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://dregazzi.sharepoint.com/sites/Pollen/"
+    },
+    "pollenViewResults": {
+      "pageUrl": "https://dregazzi.sharepoint.com/sites/Pollen/Lists/Pollen%20Polls/AllItems.aspx",
+      "fieldCustomizers": {
+        "InternalFieldName": {
+          "id": "f99d978f-bd4e-48ed-8269-ecca0284d764"
+        }
+      }
+    },
+    "createPoll": {
+      "pageUrl": "https://dregazzi.sharepoint.com/sites/Pollen/Lists/Pollen%20Polls/AllItems.aspx",
+      "customActions": {
+        "e6d84f57-b7d0-414a-bc36-c2612b671be5": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar"
+        }
+      }
+    }
+  }
+}

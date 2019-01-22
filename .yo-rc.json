@@ -1,0 +1,8 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "version": "1.4.1",
+    "libraryName": "pollen",
+    "libraryId": "0e486ab6-3f17-4d73-9189-526f984a16e1",
+    "environment": "spo"
+  }
+}

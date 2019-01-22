@@ -1,0 +1,26 @@
+.PollenViewResults {
+  .cell {
+    display: 'inline-block';
+
+        span.resultPercentage {
+            color: "[theme:themeLight], default: #739cd2]";
+            font-size: 14px;
+        }
+        .pollResult {
+            position: relative;
+            display: block;
+            height: 18px;
+            width: 260px;
+            margin-top: 4px;
+            margin-bottom: 8px;
+            padding: 0;
+            background: "[theme:themeLight, default:#eee]";
+        
+            div {
+                display: block;
+                height: 18px;
+                background: "[theme:themeDark, default: #739cd2]";
+            }            
+        }
+    }
+}

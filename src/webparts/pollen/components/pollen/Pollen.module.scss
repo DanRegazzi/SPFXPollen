@@ -1,0 +1,161 @@
+@import "~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss";
+
+.pollen {
+    .container {
+        max-width: 700px;
+        margin: 0px auto;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    .row {
+        @include ms-Grid-row;
+        @include ms-fontColor-white;
+        background-color: $ms-color-themeDark;
+        padding: 20px;
+    }
+
+    .column {
+        @include ms-Grid-col;
+        @include ms-lg10;
+        @include ms-xl8;
+        @include ms-xlPush2;
+        @include ms-lgPush1;
+    }
+
+    .title {
+        @include ms-font-xl;
+        @include ms-fontColor-white;
+    }
+
+    .subTitle {
+        @include ms-font-l;
+        @include ms-fontColor-white;
+    }
+
+    .description {
+        @include ms-font-l;
+        @include ms-fontColor-white;
+    }
+
+    .contentBox {
+        width:auto;
+        height: 340px;
+        text-align: left;
+
+        .contentBoxHeader {
+            height: 40px;
+            background: #666666;
+            padding: 0 20px;
+
+            h2 {
+                float: left;
+                color: #fff;
+                margin: 0;
+                padding-top: 10px;
+                font-weight: normal;
+                font-size: 18px;
+            }
+
+            a {
+                float:right;
+                color:#9f9f9f;
+                padding-top:14px;
+                font-size:12px;
+                text-decoration:none;
+            }
+        }
+
+        .contentBoxUnscrollable {
+            height:299px;
+            border: solid 1px #d1d1d1;
+            border-top:none;
+            padding:0 20px;
+            overflow-y:hidden;
+            background:#fff;
+
+            button { margin-top: 10px; }
+        }
+    }
+
+    .poll {
+        .pollAnswer input {
+            display: inline;
+        }
+
+        .pollButton {
+            display: block;
+        }
+
+        .pollResult {
+            position: relative;
+            display: block;
+            height: 18px;
+            width: 260px;
+            margin-top: 4px;
+            margin-bottom: 8px;
+            padding: 0;
+            background: "[theme:themeLight, default:#eee]";
+        
+            div {
+                display: block;
+                height: 18px;
+                background: "[theme:themeDark, default: #739cd2]";
+            }
+
+            span.resultPercentage {
+                position: absolute;
+                right: -35px;
+                top: -3px;
+                color: "[theme:themeDark, default: #739cd2]";
+                font-size: 14px;
+            }
+        }
+
+        &.responded {
+            .pollAnswer input {
+                display: none;
+            }
+            .pollButton {
+                display: none;
+            }
+            .pollResult {
+                display: block;
+            }
+        }
+    }
+
+    .button {
+        // Our button
+        text-decoration: none;
+        height: 32px;
+
+        // Primary Button
+        min-width: 80px;
+        background-color: $ms-color-themePrimary;
+        border-color: $ms-color-themePrimary;
+        color: $ms-color-white;
+
+        // Basic Button
+        outline: transparent;
+        position: relative;
+        font-family: "Segoe UI WestEuropean", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-size: $ms-font-size-m;
+        font-weight: $ms-font-weight-regular;
+        border-width: 0;
+        text-align: center;
+        cursor: pointer;
+        display: inline-block;
+        padding: 0 16px;
+
+        .label {
+            font-weight: $ms-font-weight-semibold;
+            font-size: $ms-font-size-m;
+            height: 32px;
+            line-height: 32px;
+            margin: 0 4px;
+            vertical-align: top;
+            display: inline-block;
+        }
+    }
+}

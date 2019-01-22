@@ -1,0 +1,25 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "Pollen Webpart",
+    "id": "0e486ab6-3f17-4d73-9189-526f984a16e1",
+    "version": "1.1.2.0",
+    "includeClientSideAssets": true,
+    "features": [
+      {
+        "title": "Application Extension - Deployment of custom action.",
+        "description": "Deploys a custom action with ClientSideComponentId association",
+        "id": "9b5397dc-5ce3-46ab-ace8-731ef98c02dc",
+        "version": "1.1.1.0",
+        "assets": {
+          "elementManifests": [
+            "elements.xml"
+          ]
+        }
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/pollen.sppkg"
+  }
+}
